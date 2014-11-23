@@ -5,11 +5,12 @@ using script **get_source_data.R**. The script downloads and unzips the file.
 
 The contained data is split into training- and test-data which are available in separate sub-folders (*train* and *test*).  
 Each of these two directories contains three files and directory *Inertial Signals*.  
-The files include  
-- The obtained values for the different features (file *X_train.txt* or *X_test.txt*)  
-- A number that shows which activity was performed (file *y_train.txt* or *y_test.txt*)  
-- A number that shows which subject performed the activity (file *subject_train.txt* or *subject_test.txt*)  
-Directory *Inertial Signals* can be ignored here because in the course project it is requested to concentrate on specific variables and for these the contents of *Inertial Signals* are not needed.
+
+* The files include  
+** The obtained values for the different features (file *X_train.txt* or *X_test.txt*)  
+** A number that shows which activity was performed (file *y_train.txt* or *y_test.txt*)  
+** A number that shows which subject performed the activity (file *subject_train.txt* or *subject_test.txt*)  
+* Directory *Inertial Signals* can be ignored here because in the course project it is requested to concentrate on specific variables and for these the contents of *Inertial Signals* are not needed.
 
 The file including the features (*X_train.txt* or *X_test.txt*) does not include the subject nor the activity performed.  
 But in each of the two directories *test* and *train* the three mentioned files have the same number of rows.  
@@ -17,8 +18,8 @@ That means that the n-th record in each of the three files belongs to the n-th o
 For that reason it is important to keep the sequence of the rows when the data is collected into one data set.
 
 In addition to the folders *train* and *test* there are files that contain  
-- The names of the activities together with the id of the activity (*activity_labels.txt*)  
-- The names of the features for which data was collected (*features.txt*). The number of entries in this file corresponds with the number of columns in files *X_train.txt* and *X_test.txt*, i.e. features.txt contains the column names for *X_train.txt* and *X_test.txt*.
+* The names of the activities together with the id of the activity (*activity_labels.txt*)  
+* The names of the features for which data was collected (*features.txt*). The number of entries in this file corresponds with the number of columns in files *X_train.txt* and *X_test.txt*, i.e. features.txt contains the column names for *X_train.txt* and *X_test.txt*.
 
 File *features_info.txt* describes how the data was obtained and how to understand the names of the features.
 
