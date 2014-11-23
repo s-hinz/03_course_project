@@ -26,7 +26,10 @@ File *README.txt* gives a general overview about the experiment for which the da
 
 
 ### 2. Tidy data set
-Script **run_analysis.R** reads the previously downloaded and extracted raw data, creates a tidy data set as per the code book and writes it into file **tidy_dataset.txt**  
+Script **run_analysis.R** reads the previously downloaded and extracted raw data, creates a tidy data set with columns as per the code book and writes it into file **tidy_dataset.txt**  
+The tidy data set includes both training- and test-data. It includes one row per subject and activity performed.   
+Only measures that have either *mean()* or *std()* in their name were included into the result data set.  
+The value that is included in a column of the result data set is the average of the respective measure for the subject/activity.  
 
 If needed **tidy_dataset.txt** can be loaded into R using command "read.table("tidy_dataset.txt", header=TRUE)".
 
